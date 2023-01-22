@@ -49,11 +49,59 @@ nav{
   margin-top: 5px;
   margin-bottom: 5px;
   display: block;
+  width: 40px;
+  height: 40px;
 }
 
-#nav:hover{
+#nav:hover, .buttons:hover{
   opacity: 50%;
   transition: 500ms;
+}
+
+#list{
+  list-style-type: none;
+  text-decoration: none;
+  width: 320px;
+  height: 110px;
+  background-color: white;
+  border: 1px solid var(--madison);
+  position: fixed;
+  top: calc(100% - 160px);
+  left: calc(50% - 180px);
+  display: none;
+}
+
+ul > a > li{
+  text-decoration: none;
+  color: var(--madison);
+  font-family: "Lato", bold;
+  font-size: 23px;
+  text-align: center;
+  margin-right: 40px;
+}
+
+#list:target {
+  list-style-type: none;
+  text-decoration: none;
+  width: 320px;
+  height: 110px;
+  background-color: white;
+  border: 1px solid var(--madison);
+  position: fixed;
+  top: calc(100% - 160px);
+  left: calc(50% - 180px);
+  display: block;
+}
+
+#link{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+#v1{
+  width: 360px;
+  height: 240px;
 }
 
 #landing{
@@ -170,6 +218,8 @@ nav{
   margin: 15px;
   border-radius: 10px;
   float: left;
+  width: 70px;
+  height: 70px;
 }
 
 .recom{
@@ -195,6 +245,8 @@ span{
   padding-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
+  width: 80px;
+  height: 16px;
 }
 
 #app{
@@ -211,6 +263,8 @@ span{
   margin-left: 10px;
   margin-right: 15px;
   padding-left: 15px;
+  width: 132px;
+  height: 38px;
 }
 
 footer{
@@ -229,6 +283,11 @@ footer{
   text-align: center;
   font-size: 13px;
   padding: 15px;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
 }
 
 .space{
